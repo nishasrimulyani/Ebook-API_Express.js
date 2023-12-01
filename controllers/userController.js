@@ -26,6 +26,7 @@ const UserController = {
       res.status(500).json({ error: 'Internal Server Error' });
     }
   },
+
   createUser: async (req, res) => {
     const { name, email, password } = req.body;
 
